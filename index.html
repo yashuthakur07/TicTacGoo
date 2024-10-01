@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APK Download Button</title>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url('vw1.jpg'); /* Replace 'your-background-image.jpg' with the URL of your background image */
+        background-size: cover;
+        background-position: center;
+    }
+    h1 {
+        color: hwb(0 0% 100%);
+        margin-bottom: 420px;
+        text-decoration: underline;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #0cae37;
+    }
+    p {
+        color: #fff;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to our APK Download Page</h1>
+<button onclick="downloadAPK()">Download APK</button>
+<p>Click the button above to download the APK file.</p>
+<script>
+    function downloadAPK() {
+        // Replace 'your_apk_file.apk' with the path or URL of your APK file
+        window.location.href = 'app-debug.apk';
+    }
+</script>
+</body>
+</html>
